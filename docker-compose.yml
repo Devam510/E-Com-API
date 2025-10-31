@@ -5,7 +5,7 @@ services:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql://user:password@db:5432/ecommerce
-      - SECRET_KEY=your-secret-key-change-in-production
+      - SECRET_KEY=5d0254f31c923e14d56914bd09441ae31fad7892fbc562d53497773eb24b698f
     depends_on:
       - db
     volumes:
@@ -26,5 +26,6 @@ services:
 
 volumes:
   postgres_data:
+
 
 
